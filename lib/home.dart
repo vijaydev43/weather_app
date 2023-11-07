@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:weather_app/getlocation.dart';
 import 'package:weather_app/weather.dart';
+
+var dayInfo = DateTime.now();
+
+var dateFormate = DateFormat('EEEE, d MMM, yyyy').format(dayInfo);
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -63,7 +68,7 @@ class _HomeState extends State<Home> {
                           height: 20,
                         ),
                         Text(
-                          'Monday, 06  Nov',
+                          dateFormate,
                           style: TextStyle(
                             color: Colors.white.withOpacity(0.7),
                             fontSize: 15,
