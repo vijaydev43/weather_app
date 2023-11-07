@@ -1,0 +1,35 @@
+name: weather_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  geolocator: ^10.1.0
+  http: ^1.1.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/sun.png
+    - assets/humidity.png
+    - assets/sand.png
+    - assets/wind.png
+
+  fonts:
+    - family: Huballi
+      fonts:
+        - asset: assets/fonts/Hubballi-Regular.ttf
+    - family: Maven
+      fonts:
+        - asset: assets/fonts/MavenPro-VariableFont_wght.ttf
